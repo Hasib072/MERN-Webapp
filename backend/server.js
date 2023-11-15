@@ -8,7 +8,7 @@ const app = express();
 dotenv.config();
 
 app.get('/', (req,res) => {
-    res.send("api is runnnig!");
+    res.send("api is runnnig!!");
 })
 
 app.get('/api/users', (req,res) => {
