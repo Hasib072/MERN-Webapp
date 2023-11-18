@@ -22,10 +22,29 @@ function App() {
     setactiveTab(value);
   };
 
-  let mainBodyToRender;
+  
 
+  const [userdata,setUserdata] = useState([]);
+  const [uid,setUid] = useState(0);
+
+  const handleLogid = (vid) => {
+    setUid(vid);
+    console.log(vid);
+  };
+  
+  console.log(uid);
+  const fetchData = async() => {
+    const {data} = await axios.get(`/api/users/${uid}`); 
+    setUserdata(data);
+  }
+
+
+  M_Name = userdata.uname;
+
+  let mainBodyToRender;
+  
   if (activeTab === 1) {
-    mainBodyToRender = <HomeTab />;
+    mainBodyToRender = <HomeTab uid={uid} />;
   } else if (activeTab === 2) {
     mainBodyToRender = <MentorTab />;
   } else if (activeTab === 3) {
@@ -35,21 +54,7 @@ function App() {
   } else {
     mainBodyToRender = <MainBody />;
   }
-
-  const [userdata,setUserdata] = useState([]);
-  const uid = 3;
-
-  const fetchData = async() => {
-    const {data} = await axios.get(`/api/users/${uid}`); 
-    setUserdata(data);
-  }
-
-
-  M_Name = userdata.uname;
-
-  useEffect(() => {
-    fetchData();
-  }, []);
+  
 
   const [isLoggedin, setisLoggedin] = useState(0);
 
@@ -57,12 +62,16 @@ function App() {
     setisLoggedin(value);
   };
 
+  
+
+  
+
   if (isLoggedin === 0) {
     return (
-      <LoginPage onLoggin={handleLoggin}/>
+      <LoginPage onLoggin={handleLoggin} logID={handleLogid}/>
     );
   }else {
-
+    fetchData();
     return (
       <div className="App">
         <TopBar mentorName={M_Name} onLoggin={handleLoggin}/>
