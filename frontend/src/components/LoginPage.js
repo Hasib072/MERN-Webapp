@@ -20,7 +20,7 @@ function LoginPage(props){
         <div className="container-fluid">
           <div className="row">
           <nav className="col topbar">
-            <img className="toplogo" src="assets/Logo.jpg"></img>
+            <img className="toplogo" src="assets/Logo.jpg" alt="none"></img>
             <div className="user-profile">
               
             </div>
@@ -28,16 +28,16 @@ function LoginPage(props){
           </div>
       </div>
 
-      <h2>Login</h2>
-          <form onSubmit={handleLoggingin}>
-          <label htmlFor="username">Username:</label>
-          <input type="text" id="username" name="username" placeholder="Enter your username" required></input>
-          <label htmlFor="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required></input>
-            <br/>
-            <br/>
-            <button>Login</button>
+      <div className="login-container">
+        <h1>Login</h1>
+          <form onSubmit={handleLoggingin} className="logForm">
+            <label htmlFor="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+            <label htmlFor="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <button type="submit">Login</button>
           </form>
+      </div>
 
         <div>
             
