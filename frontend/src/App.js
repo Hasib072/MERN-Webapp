@@ -13,7 +13,7 @@ import axios from 'axios';
 
 
 
-let M_Name = "Sample Name";
+let M_Name = "Sample - Name";
 
 function App() {
   const [activeTab, setactiveTab] = useState(1);
