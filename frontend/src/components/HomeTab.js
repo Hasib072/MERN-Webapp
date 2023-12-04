@@ -19,7 +19,14 @@ function HomeTab(props){
     return(
         <div className="col main">
             {/* <!-- Main content goes here --> */}
-            <h1>..... Home Tab Body 1! {userdata.content}</h1>
+            <div>
+              <h2>Quick Action</h2>
+              
+            </div>
+            <div className='rmclass'>
+              <h2>Recent Mentees</h2>
+              <h5>{userdata.content}</h5>
+            </div>
             
         </div>
     );

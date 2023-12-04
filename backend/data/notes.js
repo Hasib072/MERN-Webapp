@@ -15,7 +15,7 @@ const notes = [
     {
       _id: "2241300",
       uname: "Firstname Lastname",
-      content: "Learned how to create a server in node JS and my first API update",
+      content: "No Recent Mentees Currently!",
       category: "Learning",
     },
     {

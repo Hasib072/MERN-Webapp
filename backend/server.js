@@ -3,6 +3,7 @@ const notes = require("./data/notes");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const mongoose = require("mongoose");
+// const Mentor = require("./model/mentorSchema");
 
 const app = express();
 dotenv.config();
