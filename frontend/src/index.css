@@ -523,3 +523,38 @@ float:right;
 .rmclass{
   margin-top: 100px;
 }
+
+.BlankSpace{
+  margin-top: 40px;
+}
+
+
+
+
+.MenteeCardsSet{
+  margin-top: 50px;
+}
+
+.Class_Name{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.MenteeCardsSet hr{
+  position: relative;
+  top: -20px;
+  border: 1px solid #ccc; /* Border color */
+  margin: 20px 0; /* Margin space above and below the line */
+}
+
+.MenteeCardsSet i{
+  position: relative;
+  top: 5px;
+  right: 20px;
+}
+
+.menteeCard{
+  height: 420px;
+
+}
