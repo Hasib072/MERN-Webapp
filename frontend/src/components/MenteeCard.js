@@ -19,4 +19,4 @@ function MenteeCard(props) {
     );
 }
 
-export default MenteeCard
+export default MenteeCard;

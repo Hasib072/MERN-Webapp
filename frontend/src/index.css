@@ -558,3 +558,113 @@ float:right;
   height: 420px;
 
 }
+
+.SCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.StudentCard{
+  
+  margin-left: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  height: 320px;
+  width: 215px !important;
+  margin-right: 20px;
+  border-radius: 2%;
+  filter: drop-shadow(rgb(226, 226, 226) 0.15rem 0.15rem 5px);
+  
+  
+}
+
+.CardTop{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CardLow{
+  height: 100%;
+  position: relative;
+  top: -125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-profile-image {
+  width: 80px; /* Adjust the width as needed */
+  height: 80px; /* Adjust the height as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  top: -15px;
+}
+
+.circular-profile-image img {
+  width: 105%;
+  height: 105%;
+  object-fit: cover; /* Ensures the image covers the entire circular area */
+  object-position: center; /* Centers the image within the circular area */
+  border: 2px solid #fff; /* Optional: Add a border to the image */
+  position: relative;
+  right: 2%;
+  bottom: 2%;
+}
+
+.RegTxt{
+  position: relative;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NameTxt{
+  position: relative;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NameTxt p, .RegTxt p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.detailBox{
+  background-color: #F5F5F5;
+  width: 90%;
+  height: 50%;
+  border-radius: 2%;
+  padding: 2% 2% 2% 2%;
+}
+
+.detailheadings{
+  color: #434343;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.80rem;
+}
+.subdetailheadings{
+  color: #434343;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.78rem;
+  text-align: right;
+  line-height: 160%;
+  margin-top: 20px;
+}
+
+.detailval{
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.82rem;
+}

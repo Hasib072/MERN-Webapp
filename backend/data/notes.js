@@ -6,6 +6,7 @@ const notes = [
         "I made a few new friends and introduced myself to a lot of new teachers.",
       category: "College",
       menteename: "some name",
+      class: "3BCA-B",
       attendenceper: "85",
       currentgpa: "3.81",
       mentoringattendence: "4",

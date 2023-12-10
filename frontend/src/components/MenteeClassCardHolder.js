@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import MenteeCard from "./MenteeCard";
+// import MenteeCard from "./MenteeCard";
+import StudentCard from './StudentCard';
 function MenteeClassCardHolder(props) {
 
     const [isExpanded, setIsExpanded] = useState(false);
@@ -21,20 +22,12 @@ function MenteeClassCardHolder(props) {
             <hr className="row"/>
             {isExpanded && (
             <div className="row">
-                {/* Your expandable content goes here */}
-                <MenteeCard/>              
-                <MenteeCard/>              
-                <MenteeCard/>              
-                <MenteeCard/>
-                <MenteeCard/>
-                <MenteeCard/>
-                <MenteeCard/>
-                <MenteeCard/>
-                <MenteeCard/>
+                {/* Your expandable content goes here */}              
+                <StudentCard regTxt = "0000XXX" nameTxt = "Sample Name" attPer = "00.00" prvGPA = "0.0" attMentoring = "0" lmDate = "dd/mm/yyyy"/>
+                
 
             </div>
             )}
-            
         </div>
     );
     
