@@ -1,14 +1,15 @@
-function StudentCard(props) {
+function StudentCard({regTxt, nameTxt, attPer, prvGPA, attMentoring, lmDate,onTabChange}) {
 
+    const handleSideTabHighlite = (tabNo) => {
+        console.log("From Card : " + tabNo);
+        onTabChange(tabNo);
+        console.log(tabNo);
+    };
 
-    const regTxt = props.regTxt;
-    const nameTxt = props.nameTxt;
-    const attPer = props.attPer;
-    const prvGPA = props.prvGPA;
-    const attMentoring = props.attMentoring;
-    const lmDate = props.lmDate;
+    
+
     return(
-        <div className="SCard">
+        <div onClick={() => handleSideTabHighlite(5)} className="SCard">
             <div className="StudentCard">
             <div className="container-fluid CardTop">
                 <div className="row">

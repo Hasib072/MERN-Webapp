@@ -25,7 +25,7 @@ const notes = [
     },
     {
       _id: "2241300",
-      uname: "Firstname Lastname",
+      uname: "Firstname Last",
       content: "No Recent Mentees Currently!",
       category: "Learning",
       menteename: "some name",

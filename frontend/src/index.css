@@ -183,6 +183,7 @@ body{
   width: 500vw;
   padding-right: 100px;
   padding-left: 50px;
+  padding-top: 20px;
   overflow: hidden;
   overflow-y: scroll;
   margin-left: 60px;
@@ -196,6 +197,87 @@ body{
   font-weight: 700;
 }
 
+.headingHome1{
+  margin-top: 0px;
+  /* margin-left: -80px; */
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.button-27 {
+  appearance: none;
+  background-color: #9894cf;
+  border: 2px solid #9894cf;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  will-change: transform;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.button-27 span{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  /* box-shadow: none; */
+  transform: translateY(0);
+  border: 2px solid #9894cf;
+
+}
+
+.Homebutton {
+  border: none;
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  background-color: #488aec;
+  color: #ffffff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  user-select: none;
+  gap: 0.75rem;
+  box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+  transition: all .6s ease;
+}
+
+.Homebutton:hover {
+  box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+}
 
 /*          SIDEBAR               */
 
@@ -521,7 +603,25 @@ float:right;
 
 
 .rmclass{
-  margin-top: 100px;
+  margin-top: 40px;
+  
+}
+
+.RMContainer{
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.RecentBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  margin: 15px 10px 10px 10px ;
+  border-radius: 10px;
 }
 
 .BlankSpace{
@@ -607,6 +707,17 @@ float:right;
   top: -15px;
 }
 
+.circular-profile-image2 {
+  width: 60px; /* Adjust the width as needed */
+  height: 60px; /* Adjust the height as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  left: -480px;
+  border: 3px solid #9894CF;
+}
+
 .circular-profile-image img {
   width: 105%;
   height: 105%;
@@ -617,6 +728,59 @@ float:right;
   right: 2%;
   bottom: 2%;
 }
+
+.circular-profile-image2 img {
+  width: 105%;
+  height: 105%;
+  object-fit: cover; /* Ensures the image covers the entire circular area */
+  object-position: center; /* Centers the image within the circular area */
+  border: 2px solid #fff; /* Optional: Add a border to the image */
+  position: relative;
+  right: 2%;
+  bottom: 2.2%;
+}
+
+.TopHeadline{
+  position: absolute;
+}
+
+.THeadtxtName{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: relative;
+  left: -120px;
+  top: -14px;
+}
+.THeadtxtRegno{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: relative;
+  left: -100px;
+  top: -14px;
+
+}
+.THeadtxtClass{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: relative;
+  left: 0px;
+  top: -14px;
+
+}
+
+.discContainer{
+  position: absolute;
+}
+.disctxt{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #818181a5;
+  position: relative;
+  top: 22px;
+  left: -190px;
+
+}
+
 
 .RegTxt{
   position: relative;
@@ -668,3 +832,4 @@ float:right;
   font-weight: 500;
   font-size: 0.82rem;
 }
+

@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 // import MenteeCard from "./MenteeCard";
 import StudentCard from './StudentCard';
-function MenteeClassCardHolder(props) {
+function MenteeClassCardHolder({classn,onTabChange}) {
 
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleExpand = () => {
         setIsExpanded(!isExpanded);
+        
     };
 
-    const class_name = props.classn;
+    const class_name = classn;
 
     return(
         <div className="MenteeCardsSet">
@@ -23,8 +24,10 @@ function MenteeClassCardHolder(props) {
             {isExpanded && (
             <div className="row">
                 {/* Your expandable content goes here */}              
-                <StudentCard regTxt = "0000XXX" nameTxt = "Sample Name" attPer = "00.00" prvGPA = "0.0" attMentoring = "0" lmDate = "dd/mm/yyyy"/>
-                
+                <StudentCard onTabChange={onTabChange} regTxt = "0000XXX" nameTxt = "Sample Name" attPer = "00.00" prvGPA = "0.0" attMentoring = "0" lmDate = "dd/mm/yyyy"/>
+                <StudentCard onTabChange={onTabChange} regTxt = "0000XXX" nameTxt = "Sample Name" attPer = "00.00" prvGPA = "0.0" attMentoring = "0" lmDate = "dd/mm/yyyy"/>
+                <StudentCard onTabChange={onTabChange} regTxt = "0000XXX" nameTxt = "Sample Name" attPer = "00.00" prvGPA = "0.0" attMentoring = "0" lmDate = "dd/mm/yyyy"/>
+                <StudentCard onTabChange={onTabChange} regTxt = "0000XXX" nameTxt = "Sample Name" attPer = "00.00" prvGPA = "0.0" attMentoring = "0" lmDate = "dd/mm/yyyy"/>                
 
             </div>
             )}

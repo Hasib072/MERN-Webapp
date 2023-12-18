@@ -5,6 +5,7 @@ function SideTabs({onTabChange}){
     
     
     const handleSideTabHighlite = (tabNo) => {
+        console.log("From SideTab : " + tabNo);
         setHighlited(tabNo);
         onTabChange(tabNo);
       };
@@ -27,9 +28,6 @@ function SideTabs({onTabChange}){
             </li>
         </div>
 
-        
-        
-        
     );
 }
 export default SideTabs;

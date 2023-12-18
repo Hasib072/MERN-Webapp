@@ -9,6 +9,7 @@ import MentorTab from './components/MentorTab';
 import MenteeTab from './components/MenteeTab';
 import ReportsTab from './components/Reports';
 import LoginPage from './components/LoginPage';
+import StudentProfile from './components/SudentProfile';
 import axios from 'axios';
 
 
@@ -48,9 +49,11 @@ function App() {
   } else if (activeTab === 2) {
     mainBodyToRender = <MentorTab />;
   } else if (activeTab === 3) {
-    mainBodyToRender = <MenteeTab />;
+    mainBodyToRender = <MenteeTab onTabChange={handleTabChange}/>;
   } else if (activeTab === 4) {
     mainBodyToRender = <ReportsTab />;
+  } else if (activeTab === 5) {
+    mainBodyToRender = <StudentProfile />;
   } else {
     mainBodyToRender = <MainBody />;
   }
