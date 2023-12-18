@@ -34,6 +34,7 @@ function App() {
   };
   
   console.log(uid);
+  
   const fetchData = async() => {
     const {data} = await axios.get(`/api/users/${uid}`); 
     setUserdata(data);

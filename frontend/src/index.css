@@ -833,3 +833,37 @@ float:right;
   font-size: 0.82rem;
 }
 
+.mentoring_sec1{
+  background-color: white;
+  height: 130px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px 35px 20px 35px;
+}
+
+.input-style {
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #555;
+  outline: none;
+  
+}
+
+.input-style:focus {
+  
+  box-shadow: 0 0 0 0.2rem #9894cf82;
+}
+
+.ms1-txt-style{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.ms1-txt-style span{
+  font-size: 16px;
+  font-weight: 500;
+}
