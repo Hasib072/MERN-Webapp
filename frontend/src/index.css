@@ -843,12 +843,28 @@ float:right;
 }
 .mentoring_sec2{
   background-color: white;
-  height: 330px;
+  /* height: 330px; */
   width: 100%;
   border-radius: 10px;
   padding: 20px 35px 20px 35px;
   margin-bottom: 20px;
 }
+.mentoring_sec2_exp{
+  background-color: white;
+  /* height: 330px; */
+  min-height: 330px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px 35px 20px 35px;
+  margin-bottom: 20px;
+}
+
+.steppers{
+  position: relative;
+  left: 80%;
+  top: -8px;
+}
+
 
 .input-style {
   padding: 5px;
@@ -863,6 +879,60 @@ float:right;
 .input-style:focus {
   
   box-shadow: 0 0 0 0.1rem #9894cf82;
+}
+
+.pointerarrow{
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  max-width: 800px;
+  /* height: 45px; */
+  padding: 5px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  font-size: 12px;
+  background-color: #f5f5f5;
+  
+}
+
+.reg_input{
+  max-width: 220px;
+  margin-left: 0;
+}
+
+.topic_input{
+  position: relative;
+  top: -8px;
+  margin-left: 20px;
+}
+
+.tag_input{
+  position: relative;
+  top: 10px;
+  margin-left: 0px;
+}
+
+.input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+  transform: scale(0.95);
+}
+
+.input:focus {
+  border: 2px solid grey;
+}
+
+
+.DndT{
+  margin-bottom: 35px;
 }
 
 .ms1-txt-style{
@@ -907,3 +977,20 @@ float:right;
   font-weight: 400;
   margin-left: 10px;
 }
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Adjust the gap between tags as needed */
+}
+
+.tag {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  cursor: pointer;
+  /* transition: background-color 0.3s; */
+}
+
