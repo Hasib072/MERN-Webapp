@@ -839,6 +839,15 @@ float:right;
   width: 100%;
   border-radius: 10px;
   padding: 20px 35px 20px 35px;
+  margin-bottom: 20px;
+}
+.mentoring_sec2{
+  background-color: white;
+  height: 330px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px 35px 20px 35px;
+  margin-bottom: 20px;
 }
 
 .input-style {
@@ -853,7 +862,7 @@ float:right;
 
 .input-style:focus {
   
-  box-shadow: 0 0 0 0.2rem #9894cf82;
+  box-shadow: 0 0 0 0.1rem #9894cf82;
 }
 
 .ms1-txt-style{
@@ -866,4 +875,22 @@ float:right;
 .ms1-txt-style span{
   font-size: 16px;
   font-weight: 500;
+}
+
+.ms2-txt-style{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.ms2-txt-style span{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sectionheadings{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
 }
