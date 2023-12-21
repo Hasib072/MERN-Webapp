@@ -234,6 +234,15 @@ body{
   margin-top: 10px;
 }
 
+.add_btn{
+  width: 100px;
+  font-size: 12px;
+  padding: 2px;
+  margin-left: 0px;
+  margin-top: 0px;
+  min-height: 30px;
+}
+
 .button-27 span{
   font-family: 'Montserrat', sans-serif;
 }
@@ -915,6 +924,7 @@ float:right;
   position: relative;
   top: 10px;
   margin-left: 0px;
+  font-size: 15px;
 }
 
 .input:hover {
@@ -993,4 +1003,17 @@ float:right;
   cursor: pointer;
   /* transition: background-color 0.3s; */
 }
+
+
+.material-symbols-outlined {
+  margin-left: 10px;
+  margin-top: 4px;
+  font-size: 14px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 

@@ -66,11 +66,18 @@ function MentorTab(){
                 </div>
                 <div className='tag-container'>
                     <div className='tag'>
-                        Sample Tag
+                        Sample Tag <span class="material-symbols-outlined">close</span>
+                    </div>
+                    <div className='tag'>
+                        Another Tag <span class="material-symbols-outlined">close</span>
+                    </div>
+                    <div className='tag'>
+                        New Tag <span class="material-symbols-outlined">close</span>
                     </div>
                 </div>
                 <div>
                     <input class="input tag_input" name="text" type="text" placeholder="Add Keywords..."></input>
+                    <button className="button-27 add_btn" role="button"><span> Add</span></button>
                 </div>
             </div>
             
