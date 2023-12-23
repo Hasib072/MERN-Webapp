@@ -72,7 +72,7 @@ function MentorTab(){
                         Another Tag <span class="material-symbols-outlined">close</span>
                     </div>
                     <div className='tag'>
-                        New Tag <span class="material-symbols-outlined">close</span>
+                        SOmething Tag <span class="material-symbols-outlined">close</span>
                     </div>
                 </div>
                 <div>

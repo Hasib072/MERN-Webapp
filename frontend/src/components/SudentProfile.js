@@ -4,7 +4,7 @@ function StudentProfile(props) {
     
     
     return(
-        <div className="main-div-container">
+        <div className="col main">
         <div className="main-div-container-studentsidebox">
             <div className="main-div-container-studentsidebox-inner">
                 <img className="main-div-container-studentsidebox-student-img" src="/Assets/profile.png" alt="Profile Image"/>
