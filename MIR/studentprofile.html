@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-pie.min.js"></script>
+</head>
+
+<body>
+    <div class="main-div-container">
+        <div class="main-div-container-studentsidebox">
+            <div class="main-div-container-studentsidebox-inner">
+                <img class="main-div-container-studentsidebox-student-img" src="/Assets/profile.png"
+                    alt="Profile Image">
+                <p class="main-div-container-studentsidebox-regno">XXXXXXX</p>
+                <p class="main-div-container-studentsidebox-regno">Sample Name</p>
+            </div>
+            <ul class="main-div-container-studentsidebox-UL">
+                <li>Course: </li>
+                <li>Department: </li>
+                <li>Semester: </li>
+                <li>Date of Birht: </li>
+                <li>Gender: </li>
+                <li>Phone No.: </li>
+                <li>Email ID: </li>
+                <li>Address: </li>
+                <li> </li>
+            </ul>
+            <hr class="main-div-container-studentsidebox-hr">
+            <ul class="main-div-container-studentsidebox-UL">
+                <li>Family Details: </li>
+                <li>Father: </li>
+                <li>Mother: </li>
+                <li>Siblings: </li>
+                <li> </li>
+                <li> </li>
+            </ul>
+        </div>
+        <div class="main-div-container-academichistory">
+            <div class="main-div-container-academichistory-grapher">
+                <div class="main-div-container-academichistory-donut-chart" data-percent="92">
+                    <div class="main-div-container-academichistory--donut-chart-circleplace">
+                        <div class="main-div-container-academichistory--donut-chart-circle"></div>
+                    </div>
+                    <p class="main-div-container-academichistory--donut-chart-label">92%</p>
+                </div>
+                <div class="main-div-container-academichistory-donut-chart" data-percent="79">
+                    <div class="main-div-container-academichistory--donut-chart-circleplace">
+                        <div class="main-div-container-academichistory--donut-chart-circle"></div>
+                    </div>
+                    <p class="main-div-container-academichistory--donut-chart-label">79%</p>
+                </div>
+                <div class="main-div-container-academichistory-donut-chart" data-percent="82">
+                    <div class="main-div-container-academichistory--donut-chart-circleplace">
+                        <div class="main-div-container-academichistory--donut-chart-circle"></div>
+                    </div>
+                    <p class="main-div-container-academichistory--donut-chart-label">82%</p>
+                </div>
+                <div>
+                    <button class="popbuttonstyle" onclick="togglePopup()">Edit</button>
+                </div>
+            </div>
+
+
+            <div class="overlay" id="overlay"></div>
+            <div class="popup" id="popup">
+                <span class="close-btn" onclick="togglePopup()">&times;</span>
+                <h2>Enter Details</h2>
+                <table>
+                    <tr>
+                        <th>Subjects</th>
+                        <th>CIA 1</th>
+                        <th>CIA 2</th>
+                        <th>CIA 3</th>
+                    </tr>
+                    <tr>
+                        <td>Sample Subject</td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sample Subject</td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sample Subject</td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sample Subject</td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sample Subject</td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                        <td>
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000" />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000" />
+                        </td>
+                    </tr>
+                </table>
+                <button onclick="saveDetails()">Save</button>
+            </div>
+            <div class="final_sample">
+                <table>
+                    <tr>
+                        <div class="sampler">
+                            <th class="newtagger sampler1">Subjects</th>
+                            <th class="newtagger sampler1">CIA 1</th>
+                            <th class="newtagger sampler1">CIA 2</th>
+                            <th class="newtagger sampler1">CIA 3</th>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="newtagger">Sample Subject</td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="newtagger">Sample Subject</td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="newtagger">Sample Subject</td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="newtagger">Sample Subject</td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="newtagger">Sample Subject</td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                        <td class="newtagger">
+                            <input type="text" pattern="\d*" title="Format: 123" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                            <span class="slash">/</span>
+                            <input type="text" pattern="\d*" title="Format: 456" maxlength="3" placeholder="000"
+                                value="900" readonly />
+                        </td>
+                    </tr>
+
+
+
+
+                </table>
+            </div>
+
+        </div>
+        <div class="main-div-conatiner-extracc">
+
+            <div class="overlay" id="overlay-new"></div>
+            <div class="popup" id="popup-new">
+                <span class="close-btn" onclick="togglePopup1()">&times;</span>
+                <h2>Extra Circular</h2>
+                <ul>
+                    <li><input type="text" class="inputer" placeholder="Enter detail 1"></li>
+                    <li><input type="text" class="inputer" placeholder="Enter detail 2"></li>
+                    <li><input type="text" class="inputer" placeholder="Enter detail 3"></li>
+                    <li><input type="text" class="inputer" placeholder="Enter detail 4"></li>
+                    <li><input type="text" class="inputer" placeholder="Enter detail 5"></li>
+                </ul>
+                <button onclick="saveChanges()">Save</button>
+            </div>
+
+            <div class="user-details-form">
+                <div>
+                    <label>Details: <button class="ExtraDetailPlacer" onclick="togglePopup1()">Edit</button></label>
+
+                </div>
+                <ul>
+                    <li><input type="text" class="inputer" placeholder="Enter detail 1" value="Details" readonly></li>
+                    <li><input type="text" class="inputer" placeholder="Enter detail 2" value="Details" readonly></li>
+                    <li><input type="text" class="inputer" placeholder="Enter detail 3" value="Details" readonly></li>
+                    <li><input type="text" class="inputer" placeholder="Enter detail 4" value="Details" readonly></li>
+                    <li><input type="text" class="inputer" placeholder="Enter detail 5" value="Details" readonly></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
