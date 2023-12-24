@@ -13,7 +13,9 @@ function MentorTab(){
             {/* <!-- Main content goes here --> */}
             {/* <h1>Mentor Tab Body 2 !</h1> */}
             <div className="mentoring_sec1 container">
-                <input placeholder="Enter Register No." class="input reg_input row" type="text"/>
+                <form>
+                    <input placeholder="Enter Register No." class="input reg_input row" type="text"/>
+                </form>
                 <div className="row">
                     <p className="ms1-txt-style"><span>Mentee Name :&emsp; </span> FirstName LastName &emsp;&emsp; |  &ensp;&ensp; 2241XXX &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <span>Class : </span> X_XXX</p>
                 </div>
@@ -50,6 +52,8 @@ function MentorTab(){
             </div>
 
             <div className='container mentoring_sec2_exp'>
+                <form>
+                    
                 <div className="row">
                     <p className="sectionheadings" >New Session Details</p>
                     {/* <img className="editicon" src="assets/steppers_.svg" alt="expand" /> */}
@@ -100,7 +104,19 @@ function MentorTab(){
                                 <label for="solved">Solved</label>
                             </li>
                         </ul> 
+                        
                 </div>
+
+                <div className='row'>
+                    <p className="sectionheadings2">Relation to previous Session</p>
+                    <input class="input sesssion_relation_input" name="text" type="text" placeholder="Session Id || Date || Topic of discussion"></input>
+                </div>
+
+                <div className='remark_box row'>
+                    <p className="sectionheadings2 row">Remarks :</p>
+                    <textarea class="input remark_input row" name="text" type="text" placeholder="Remarks"></textarea>
+                </div>
+                </form>
             </div>
             
         </div>

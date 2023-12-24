@@ -921,6 +921,29 @@ float:right;
   margin-left: 20px;
 }
 
+.sesssion_relation_input{
+  position: relative;
+  top: -8px;
+  margin-left: 20px;
+}
+
+.remark_input{
+  
+  max-width: 1100px;
+            height: 200px;
+            padding: 10px; /* Increased padding for better readability */
+            border-radius: 12px;
+            border: 1.5px solid lightgrey;
+            outline: none;
+            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+            box-shadow: 0px 0px 20px -18px;
+            font-size: 14px; /* Increased font size for better readability */
+            background-color: #f5f5f5;
+            margin: 10px 0; /* Adjusted margin for spacing */
+            resize: none; /* Disable textarea resizing */
+            display: block; /* Make it a block-level element */
+}
+
 .tag_input{
   position: relative;
   top: 0px;
@@ -1051,6 +1074,10 @@ float:right;
   color: #fff;
 }
 
+
+.remark_box{
+  margin-top: 10px;
+}
 .main-div-container-studentsidebox {
   height: 82%;
   width: 26%;
