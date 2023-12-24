@@ -56,6 +56,7 @@ function MentorTab(){
                     
                 <div className="row">
                     <p className="sectionheadings" >New Session Details</p>
+                    <p className="sectionheadings-right" >Session Id: xxxxxxx</p>
                     {/* <img className="editicon" src="assets/steppers_.svg" alt="expand" /> */}
                 </div>
                 <div className="row DndT">

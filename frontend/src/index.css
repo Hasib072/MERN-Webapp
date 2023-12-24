@@ -998,6 +998,13 @@ float:right;
   font-size: 20px;
   font-weight: 800;
 }
+
+.sectionheadings-right{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  margin-left: 650px;
+}
 .sectionheadings2{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
