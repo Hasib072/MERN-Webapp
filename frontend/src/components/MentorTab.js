@@ -72,12 +72,34 @@ function MentorTab(){
                         Another Tag <span class="material-symbols-outlined">close</span>
                     </div>
                     <div className='tag'>
-                        SOmething Tag <span class="material-symbols-outlined">close</span>
+                        Something Tag <span class="material-symbols-outlined">close</span>
                     </div>
                 </div>
                 <div>
                     <input class="input tag_input" name="text" type="text" placeholder="Add Keywords..."></input>
                     <button className="button-27 add_btn" role="button"><span> Add</span></button>
+                </div>
+
+                <div className='session_status'>
+                        <p className="sectionheadings2" >Status :</p>
+                        <ul>
+                            <li>
+                                <input type="radio" id="raised" name="status" value="raised"/>
+                                <label for="raised">Raised</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="hold" name="status" value="hold"/>
+                                <label for="hold">Hold</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="discussed" name="status" value="discussed"/>
+                                <label for="discussed">Discussed</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="solved" name="status" value="solved"/>
+                                <label for="solved">Solved</label>
+                            </li>
+                        </ul> 
                 </div>
             </div>
             
