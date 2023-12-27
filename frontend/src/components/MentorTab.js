@@ -82,7 +82,7 @@ function MentorTab(){
                 </div>
                 <div>
                     <input class="input tag_input" name="text" type="text" placeholder="Add Keywords..."></input>
-                    <button className="button-27 add_btn" role="button"><span> Add</span></button>
+                    <button className="button-27 add_btn" role="add"><span> Add</span></button>
                 </div>
 
                 <div className='session_status'>

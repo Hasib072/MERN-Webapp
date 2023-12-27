@@ -1,7 +1,7 @@
 import MenteeClassCardHolder from "./MenteeClassCardHolder";
 
 function MenteeTab({onTabChange}){
-    const classArray = ["1BCA-A", "1BCA-B","4BCA-B","2MDS"];
+    const classArray = ["1BCA-A", "1BCA-B","4BCA-B","2MDS","1BCA-A", "1BCA-B","4BCA-B","2MDS",];
     return(
         <div className="col main">
             {/* <!-- Main content goes here --> */}

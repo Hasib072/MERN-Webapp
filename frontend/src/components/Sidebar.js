@@ -52,7 +52,7 @@ function Sidebar({onTabChange}){
 
                 <SideTabs onTabChange={onTabChange} />
                 
-                <li className="sidebar-brand pg05" onClick={handleSidebarExpand} id="menu-toggle" href="#menu-toggle" >                    
+                <li className=" sidebar-brand pg06" onClick={handleSidebarExpand} id="menu-toggle" href="#menu-toggle" >                    
                   <a href="#"><i className="material-icons sbicon">menu</i> <span className="navtxt"></span>  </a>
                 </li>
             </ul>

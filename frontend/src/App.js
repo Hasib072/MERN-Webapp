@@ -11,6 +11,8 @@ import ReportsTab from './components/Reports';
 import LoginPage from './components/LoginPage';
 import StudentProfile from './components/SudentProfile';
 import axios from 'axios';
+import AdminTab from './components/AdminTab';
+
 
 
 
@@ -54,7 +56,7 @@ function App() {
   } else if (activeTab === 4) {
     mainBodyToRender = <ReportsTab />;
   } else if (activeTab === 5) {
-    mainBodyToRender = <StudentProfile />;
+    mainBodyToRender = <AdminTab />;
   } else {
     mainBodyToRender = <MainBody />;
   }
