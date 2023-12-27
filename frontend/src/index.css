@@ -1436,3 +1436,45 @@ input {
     font-weight: bold;
 }
 
+.at_box{
+  background-color: white;
+  margin: 15px 10px 10px 10px ;
+  height: 90%; 
+  border-radius: 10px;
+}
+
+.mentor_section{
+  /* background-color: #007bff; */
+  margin-top: 30px;
+  height: 90%;
+  
+}
+.mentee_section{
+  /* background-color: #00ff62; */
+  margin-top: 30px;
+  height: 90%;
+}
+
+.mentor_row {
+  margin-top: 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.mentor_row p{
+  margin-top: 10px;
+}
+
+.mentor_row_detail1 {
+  flex: 1;
+  padding-left: 8px;
+}
+
+.mentor_row_detail2 {
+  text-align: right;
+  padding-right: 8px;
+}
