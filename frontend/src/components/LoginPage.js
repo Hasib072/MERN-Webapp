@@ -1,7 +1,16 @@
-
-
+import { useState } from "react";
+import axios from "axios";
 function LoginPage(props){
   
+  const [data,setData] = useState({
+    uid: '',
+    password: '',
+  })
+
+  async function submit(e) {
+    e.preventDefault();
+    
+  }
 
   const handleLoggingin = (e) => {
     props.onLoggin(e);
@@ -30,18 +39,16 @@ function LoginPage(props){
 
       <div className="login-container">
         <h1>Login</h1>
-          <form onSubmit={handleLoggingin} className="logForm">
+          <form action="POST" onSubmit={handleLoggingin} className="logForm">
             <label htmlFor="username">Username:</label>
-            <input type="text" id="username" name="username" required />
+            <input type="text" id="username" name="username" required value={data.uid} onChange={(e) => setData({...data, uid: e.target.value})} />
             <label htmlFor="password">Password:</label>
-            <input type="password" id="password" name="password" required />
+            <input type="password" id="password" name="password" required value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
             <button type="submit">Login</button>
           </form>
       </div>
 
-        <div>
-            
-        </div>
+        
 
 
       </div>

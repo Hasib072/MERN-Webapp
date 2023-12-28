@@ -28,11 +28,11 @@ function HomeTab({uid,onTabChange}){
               <h2 className='headingHome1'>Quick Action</h2>
               <div className='row'>
                 <button onClick={() => handleSideTabHighlite(2)} className="button-27" role="button"><i className="material-icons sbicon">person</i><span> Mentor Profile</span></button>
-                <button className="button-27" role="button"><i className="material-icons sbicon">person</i><span> View Report</span></button>
+                <button onClick={() => handleSideTabHighlite(4)} className="button-27" role="button"><i className="material-icons sbicon">person</i><span> View Report</span></button>
               </div>
               <div className='row'>
-                <button className="button-27" role="button"><i className="material-icons sbicon">person</i><span> Mentee Profile</span></button>
-                <button className="button-27" role="button"><i className="material-icons sbicon">person</i><span> Attendence</span></button>
+                <button onClick={() => handleSideTabHighlite(3)} className="button-27" role="button"><i className="material-icons sbicon">person</i><span> Mentee Profile</span></button>
+                <button onClick={() => handleSideTabHighlite(5)} className="button-27" role="button"><i className="material-icons sbicon">person</i><span> Attendence</span></button>
               </div>
             </div>
             <div className='rmclass'>
