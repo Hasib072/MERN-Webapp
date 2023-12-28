@@ -9,7 +9,7 @@ function StudentCard({regTxt, nameTxt, attPer, prvGPA, attMentoring, lmDate,onTa
     
 
     return(
-        <div onClick={() => handleSideTabHighlite(5)} className="SCard">
+        <div onClick={() => handleSideTabHighlite(6)} className="SCard">
             <div className="StudentCard">
             <div className="container-fluid CardTop">
                 <div className="row">

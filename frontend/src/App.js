@@ -48,7 +48,7 @@ function App() {
   let mainBodyToRender;
   
   if (activeTab === 1) {
-    mainBodyToRender = <HomeTab uid={uid} />;
+    mainBodyToRender = <HomeTab onTabChange={handleTabChange} uid={uid} />;
   } else if (activeTab === 2) {
     mainBodyToRender = <MentorTab />;
   } else if (activeTab === 3) {
@@ -57,6 +57,8 @@ function App() {
     mainBodyToRender = <ReportsTab />;
   } else if (activeTab === 5) {
     mainBodyToRender = <AdminTab />;
+  } else if (activeTab === 6) {
+    mainBodyToRender = <StudentProfile />;
   } else {
     mainBodyToRender = <MainBody />;
   }

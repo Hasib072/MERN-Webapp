@@ -2,14 +2,19 @@ import React, { useEffect, useState} from 'react';
 import axios from 'axios';
 import RecentMentee from './RecentMentee';
 
-function HomeTab(props){
+function HomeTab({uid,onTabChange}){
 
     const [userdata,setUserdata] = useState([]);
     
     const fetchData = async() => {
-    const {data} = await axios.get(`/api/users/${props.uid}`); 
+    const {data} = await axios.get(`/api/users/${uid}`);
     setUserdata(data);
   }
+
+  const handleSideTabHighlite = (tabNo) => {
+    console.log("From HomeTab : " + tabNo);
+    onTabChange(tabNo);
+  };
 
   useEffect(() => {
     fetchData();
@@ -22,7 +27,7 @@ function HomeTab(props){
             <div>
               <h2 className='headingHome1'>Quick Action</h2>
               <div className='row'>
-                <button className="button-27" role="button"><i className="material-icons sbicon">person</i><span> Mentor Profile</span></button>
+                <button onClick={() => handleSideTabHighlite(2)} className="button-27" role="button"><i className="material-icons sbicon">person</i><span> Mentor Profile</span></button>
                 <button className="button-27" role="button"><i className="material-icons sbicon">person</i><span> View Report</span></button>
               </div>
               <div className='row'>
