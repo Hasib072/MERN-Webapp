@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-function SideTabs({onTabChange}){
+function SideTabs({isAdmin, onTabChange}){
     const [isHighlited, setHighlited] = useState(1);
-    const isAdmin = 1;
+    const isadmin = isAdmin;
     
     const handleSideTabHighlite = (tabNo) => {
         console.log("From SideTab : " + tabNo);
@@ -27,7 +27,7 @@ function SideTabs({onTabChange}){
             <li className={isHighlited === 4 ? '"pg04" heighlite_tab' : ''}>
                 <a href="#" onClick={() => handleSideTabHighlite(4)}><i className="material-icons sbicon">description</i> <span className="navtxt">Reports</span>  </a>
             </li>
-            {isAdmin == 1 && (
+            {isAdmin == "1" && (
                 <li className={isHighlited === 5 ? '"pg05" heighlite_tab' : ''}>
                     <a href="#" onClick={() => handleSideTabHighlite(5)}><i className="material-icons sbicon">admin_panel_settings</i> <span className="navtxt">Admin</span>  </a>
                 </li>

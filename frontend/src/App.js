@@ -17,6 +17,7 @@ import AdminTab from './components/AdminTab';
 
 
 let M_Name = "Sample - Name";
+let M_role = "0"
 
 function App() {
   const [activeTab, setactiveTab] = useState(1);
@@ -44,6 +45,7 @@ function App() {
 
 
   M_Name = userdata.uname;
+  M_role = userdata.role;
 
   let mainBodyToRender;
   
@@ -84,7 +86,7 @@ function App() {
       <div className="App">
         <TopBar mentorName={M_Name} onLoggin={handleLoggin}/>
         <div className='row'>
-          <Sidebar onTabChange={handleTabChange} />
+          <Sidebar isAdmin={M_role} onTabChange={handleTabChange} />
           
           {mainBodyToRender}
           

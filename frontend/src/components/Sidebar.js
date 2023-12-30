@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import SideTabs from './SideTabs';
 
 
-function Sidebar({onTabChange}){
+function Sidebar({isAdmin, onTabChange}){
     const [isExpanded, setExpanded] = useState(false);  
   
   const handleSidebarExpand = () => {
@@ -50,7 +50,7 @@ function Sidebar({onTabChange}){
                     
                 </div>
 
-                <SideTabs onTabChange={onTabChange} />
+                <SideTabs isAdmin={isAdmin} onTabChange={onTabChange} />
                 
                 <li className=" sidebar-brand pg06" onClick={handleSidebarExpand} id="menu-toggle" href="#menu-toggle" >                    
                   <a href="#"><i className="material-icons sbicon">menu</i> <span className="navtxt"></span>  </a>

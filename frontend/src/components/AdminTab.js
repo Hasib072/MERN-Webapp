@@ -14,25 +14,24 @@ function ReportsTab(){
 
         // Add more mentors as needed
       ];
-    
       const menteeData = [
         [
-          { name: 'Mentee 1', regNo: 'R1', sessions: 3 },
-          { name: 'Mentee 2', regNo: 'R2', sessions: 5 },
-          { name: 'Mentee 2', regNo: 'R2', sessions: 5 },
-          { name: 'Mentee 2', regNo: 'R2', sessions: 5 },
+          { name: 'Mentee 1', regNo: '2241XXX', sessions: 3 },
+          { name: 'Mentee 2', regNo: '2241XXX', sessions: 5 },
+          { name: 'Mentee 2', regNo: '2241XXX', sessions: 5 },
+          { name: 'Mentee 2', regNo: '2241XXX', sessions: 5 },
 
-          // Add more mentees for Mentor 1
+          // Add more mentees for Mentee 1
         ],
         [
-          { name: 'Mentee 3', regNo: 'R3', sessions: 4 },
-          { name: 'Mentee 4', regNo: 'R4', sessions: 6 },
-          // Add more mentees for Mentor 2
+          { name: 'Mentee 3', regNo: '2241XXX', sessions: 4 },
+          { name: 'Mentee 4', regNo: '2241XXX', sessions: 6 },
+          // Add more mentees for Mentee 2
         ],
         [],
         [],
         [],
-        // Add more arrays for additional mentors
+        // Add more arrays for additional mentees
       ];
       
       const getNumberOfMentees = (mentorIndex) => {
