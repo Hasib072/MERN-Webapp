@@ -243,6 +243,53 @@ body{
   
   min-height: 30px;
 }
+.add-mentor-btn{
+  appearance: none;
+  background-color: #9894cf;
+  border: 2px solid #9894cf;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  width: 100%;
+  padding: 2px;
+  min-height: 50px; 
+}
+
+.add-mentee-btn{
+  appearance: none;
+  background-color: #9894cf;
+  border: 2px solid #9894cf;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  width: 100%;
+  padding: 2px;
+  min-height: 50px;
+  
+}
+
+.disabled{
+  background-color: #F5F5F5;
+  color: gray;
+}
 
 .button-27 span{
   font-family: 'Montserrat', sans-serif;
@@ -1439,21 +1486,26 @@ input {
 .at_box{
   background-color: white;
   margin: 15px 10px 10px 10px ;
-  height: 90%; 
+  min-height: 90%; 
   border-radius: 10px;
 }
 
 .mentor_section{
   /* background-color: #007bff; */
   margin-top: 30px;
-  height: 90%;
+  height: 480px;
+  margin-bottom: 20px;
+  overflow-y: auto;
   
 }
 .mentee_section{
   /* background-color: #00ff62; */
   margin-top: 30px;
-  height: 90%;
+  height: 480px;
+  margin-bottom: 20px;
+  overflow-y: auto;
 }
+
 
 .mentor_row {
   margin-top: 10px;
@@ -1462,9 +1514,13 @@ input {
   padding: 4px;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Align items vertically in the center */
+  align-items: center; 
 }
 
+.selected{
+  background-color: #9894cf;
+  color: #FFFFFF;
+}
 .mentor_row p{
   margin-top: 10px;
 }
@@ -1479,6 +1535,8 @@ input {
   padding-right: 8px;
 }
 
-.mentor_section ul{
+.mentor_section ul, .mentee_section ul{
   list-style-type: none;
+  padding: 0; /* Remove default padding */
+  margin: 0;
 }
