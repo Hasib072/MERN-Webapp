@@ -1540,3 +1540,12 @@ input {
   padding: 0; /* Remove default padding */
   margin: 0;
 }
+
+.date_picker{
+  width: 150px;
+  position: relative;
+}
+.time_picker{
+  width: 150px;
+  
+}

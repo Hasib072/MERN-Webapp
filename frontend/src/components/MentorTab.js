@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+  
 
 function MentorTab(){
     const [isExpanded, setIsExpanded] = useState(false);
@@ -7,6 +9,39 @@ function MentorTab(){
     const toggleCard = () => {
         setIsExpanded(!isExpanded);
       };
+    
+      const [tags, setTags] = useState([]);
+      const [newTag, setNewTag] = useState('');
+    
+      const handleAddTag = (e) => {
+        e.preventDefault();
+        const trimmedNewTag = newTag.trim();
+        if (trimmedNewTag !== '' && !tags.includes(trimmedNewTag)) {
+          setTags([...tags, trimmedNewTag]);
+          setNewTag('');
+        } else {
+            alert('Tag already exists!'); // Display alert if the tag already exists
+          }
+      };
+    
+      const handleRemoveTag = (indexToRemove) => {
+        const updatedTags = tags.filter((_, index) => index !== indexToRemove);
+        setTags(updatedTags);
+      };
+
+      
+      const [selectedDate, setSelectedDate] = useState(null);
+      const [selectedTime, setSelectedTime] = useState(new Date());
+    
+      const handleDateChange = (date) => {
+        setSelectedDate(date);
+      };
+    
+      const handleTimeChange = (time) => {
+        setSelectedTime(time);
+      };
+
+
 
     return(
         <div className="col main">
@@ -60,7 +95,29 @@ function MentorTab(){
                     {/* <img className="editicon" src="assets/steppers_.svg" alt="expand" /> */}
                 </div>
                 <div className="row DndT">
-                    <p className="ms2-txt-style"><span>Date :&emsp; </span> DD/MM/YYYY &emsp;&emsp;  &ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <span>Time : &ensp;&ensp;</span> hh:mm AM</p>
+                <div className="ms2-txt-style row">
+                    <div className='col-4'>
+                    <span>Time : &ensp;&ensp;</span>
+                    <DatePicker
+                    className='time_picker'
+                      selected={selectedTime}
+                      onChange={handleTimeChange}
+                      showTimeSelect
+                      showTimeSelectOnly
+                      timeIntervals={15}
+                      dateFormat="h:mm aa"
+                    />
+                    </div>
+                    <div className='col-4'>             
+                    <span>Date :&emsp; </span>
+                    <DatePicker
+                    className='date_picker'
+                      selected={selectedDate}
+                      onChange={handleDateChange}
+                      dateFormat="dd/MM/yyyy"
+                    />
+                    </div>
+                </div>
                 </div>
                 <div className="row">
                     <p className="sectionheadings2">Main Topic of discussion</p>
@@ -70,19 +127,27 @@ function MentorTab(){
                     <p className="sectionheadings2">Keywords :</p>
                 </div>
                 <div className='tag-container'>
-                    <div className='tag'>
-                        Sample Tag <span class="material-symbols-outlined">close</span>
-                    </div>
-                    <div className='tag'>
-                        Another Tag <span class="material-symbols-outlined">close</span>
-                    </div>
-                    <div className='tag'>
-                        Something Tag <span class="material-symbols-outlined">close</span>
-                    </div>
+                {tags.map((tag, index) => (
+                    <div className='tag' key={index}>
+                        {tag}
+                        <span className="material-symbols-outlined" onClick={() => handleRemoveTag(index)}>
+                          close
+                        </span>
+                  </div>
+                ))}
                 </div>
                 <div>
-                    <input class="input tag_input" name="text" type="text" placeholder="Add Keywords..."></input>
-                    <button className="button-27 add_btn" role="add"><span> Add</span></button>
+                    <input
+                      className="input tag_input"
+                      name="text"
+                      type="text"
+                      placeholder="Add Keywords..."
+                      value={newTag}
+                      onChange={(e) => setNewTag(e.target.value)}
+                    />
+                    <button className="button-27 add_btn" onClick={handleAddTag} role="add">
+                      <span>Add</span>
+                    </button>
                 </div>
 
                 <div className='session_status'>
@@ -123,6 +188,6 @@ function MentorTab(){
         </div>
     );
 
-}
+};
 
 export default MentorTab;
