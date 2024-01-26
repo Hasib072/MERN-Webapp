@@ -18,7 +18,7 @@ function ReportsTab(){
         [
           { name: 'Mentee 1', regNo: '2241XXX', sessions: 3 },
           { name: 'Mentee 2', regNo: '2241XXX', sessions: 5 },
-          { name: 'Mentee 2', regNo: '2241XXX', sessions: 5 },
+          { name: 'Mentee 2', regNo: '2241XXX', sessions: 4  },
           { name: 'Mentee 2', regNo: '2241XXX', sessions: 5 },
 
           // Add more mentees for Mentee 1
@@ -28,7 +28,19 @@ function ReportsTab(){
           { name: 'Mentee 4', regNo: '2241XXX', sessions: 6 },
           // Add more mentees for Mentee 2
         ],
-        [],
+        [
+          { name: 'Mentee 3', regNo: '2241XXX', sessions: 4 },
+          { name: 'Mentee 4', regNo: '2241XXX', sessions: 6 },
+          { name: 'Mentee 3', regNo: '2241XXX', sessions: 4 },
+          { name: 'Mentee 4', regNo: '2241XXX', sessions: 6 },
+          { name: 'Mentee 3', regNo: '2241XXX', sessions: 4 },
+          { name: 'Mentee 4', regNo: '2241XXX', sessions: 6 },
+          { name: 'Mentee 3', regNo: '2241XXX', sessions: 4 },
+          { name: 'Mentee 4', regNo: '2241XXX', sessions: 6 },
+          { name: 'Mentee 4', regNo: '2241XXX', sessions: 6 },
+          { name: 'Mentee 4', regNo: '2241XXX', sessions: 6 },
+
+        ],
         [],
         [],
         // Add more arrays for additional mentees
